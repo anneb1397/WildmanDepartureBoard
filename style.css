@@ -5,20 +5,21 @@ iframe{
   width:100%;
 }
 .weatherwidget-io{
-  width:97.5%;
-  margin-top: 1%;;
-  margin-left: auto;
+  width:50%;
+  margin: none;
+  margin-left: 1%;
   margin-right: auto;
+  float:left;
 }
 .departure{
   border: none;
   text-color: white;
-  min-height: 40em;
+  min-height: 30em;
   
 }
 .clock{
   text-align:center;
-  font-size: 14vw;
+  font-size: 6vw;
   font-weight: bold;
   color: white;
   padding-top: 0em;

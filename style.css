@@ -13,12 +13,12 @@ iframe{
 .departure{
   border: none;
   text-color: white;
-  min-height: 30em;
+  min-height: 40em;
   
 }
 .clock{
   text-align:center;
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: bold;
   color: white;
   padding-top: 0em;

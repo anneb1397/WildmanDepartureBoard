@@ -2,24 +2,32 @@
   <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
   <script src="script.js"></script>
   <link href="style.css" rel="stylesheet">
+  <meta http-equiv="refresh" content="10" />
   
 <body>
   <iframe class = "departure" src="https://www.adventurecentral.com/user/web/cart/wfDepartureBoard.aspx?CLUID=46e78232-74b3-4f5a-8b43-42a79c0f31fb" seamless="seamless" scrolling ="no">
   <p>Your browser does not support iframes.</p>
   </iframe>
-  
- <a class="weatherwidget-io" href="https://forecast7.com/en/45d77n87d99/niagara/?unit=us" data-label_1="NIAGARA" data-label_2="WEATHER" data-mode="Current" data-theme="weather_one" >NIAGARA WEATHER</a>
-  <div class = "clock">
-    <p id="hour"></p>
-    <p>:</p>
-    <p id="min"></p>
-    <p>:</p>
-    <p id="sec"></p>
-    <p id="daytime"></p>
+  <div class="weather_time">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/45d77n87d99/niagara/?unit=us" data-label_1="NIAGARA" data-label_2="WEATHER" data-mode="Current" data-theme="weather_one">NIAGARA WEATHER</a>
+      <div class="clock">
+          <p id="hour"></p>
+          <p>:</p>
+          <p id="min"></p>
+          <p>:</p>
+          <p id="sec"></p>
+          <p id="daytime"></p>
+      </div>
+      <script>
+          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+      </script>
   </div>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+
+
+
+    <div class="slideshow_holder">
+
+    </div>
 
 </body>
 </html>

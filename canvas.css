@@ -1,5 +1,6 @@
 ﻿body {
     background: linear-gradient(white, hsla(180, 95%, 15%, 1), hsla(180, 95%, 15%, 1));
+    overflow: hidden;
 }
 
 .departure {

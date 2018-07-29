@@ -18,6 +18,91 @@ var half_h = h / 2;
 var half_w = w / 2;
 var ten = 0.1 * w;
 
+var d = document.getElementById('date');
+setInterval(setDate, 20000000);
+setDate();
+
+function setDate() {
+    var currentDate = new Date();
+    var m = currentDate.getMonth();
+    var day = currentDate.getDay();
+    var n = currentDate.getDate();
+    var year = currentDate.getFullYear();
+
+    d.innerHTML = swapDay(day) + ", " + swapMonth(m) + " " + n + ", " + year;
+}
+
+function swapDay(dy) {
+    var m = " ";
+    switch (dy) {
+        case 0:
+            m = "Sunday";
+            break;
+        case 1:
+            m = "Monday";
+            break;
+        case 2:
+            m = "Tuesday";
+            break;
+        case 3:
+            m = "Wednesday";
+            break;
+        case 4:
+            m = "Thursday";
+            break;
+        case 5:
+            m = "Friday";
+            break;
+        case 6:
+            m = "Saturday";
+            break;
+    }
+
+    return m;
+}
+function swapMonth(n) {
+    var m = " ";
+    switch (n) {
+        case 0:
+            m = "January";
+            break;
+        case 1:
+            m = "February";
+            break;
+        case 2:
+            m = "March";
+            break;
+        case 3:
+            m = "April";
+            break;
+        case 4:
+            m = "May";
+            break;
+        case 5:
+            m = "June";
+            break;
+        case 6:
+            m = "July";
+            break;
+        case 7:
+            m = "August";
+            break;
+        case 8:
+            m = "September";
+            break;
+        case 9:
+            m = "October";
+            break;
+        case 10:
+            m = "November";
+            break;
+        case 11:
+            m = "December";
+            break;
+    }
+    return m;
+}
+
 function updateTime() {
     var currentDate = new Date();
     var g = $.createRadialGradient(half_w, half_h, .001 * w, half_w, half_h, half_w);
